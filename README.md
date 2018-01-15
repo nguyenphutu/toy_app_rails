@@ -1,24 +1,16 @@
-# README
+run bundle
+  $ bundle install --without production
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+run migrate
+  $ rails db:migrate
 
-Things you may want to cover:
+run application
+  $ rails server
 
-* Ruby version
+push to heroku
+  $ heroku create
+  $ git push heroku master
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run migrate in heroku application
+  $ heroku run rails db:migrate
+  
